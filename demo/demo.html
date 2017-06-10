@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>Demo</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Turtle" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="renderer" content="webkit" />
+	<link href="./lib-materialize.min.css" type="text/css" rel="stylesheet">
+	<link href="./demo.css" type="text/css" rel="stylesheet">
+
+	<link href="./../material-refresh-plus.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+	<header>
+		<div class="header-wrapper">
+			Material Refresh Plus - Demo
+		</div>
+	</header>
+	<div class="container">
+		<div class="card-panel blue">Item 1</div>
+		<div class="card-panel green">Item 2</div>
+		<div class="card-panel cyan">Item 3</div>
+		<div class="card-panel orange">Item 4</div>
+		<div class="card-panel pink">Item 5</div>
+		<div class="card-panel indigo">Item 6</div>
+		<div class="card-panel teal">Item 7</div>
+		<div class="card-panel blue-grey">Item 8</div>
+		<div class="card-panel purple">Item 9</div>
+		<div class="card-panel yellow">Item 10</div>
+	</div>
+</body>
+<foot>
+	<script type="text/javascript" src="./lib-jquery-3.1.0.min.js" ></script>
+	<script type="text/javascript" src="./../material-refresh-plus.js" ></script>
+	<script>
+		mRefresh({
+			scrollEl : '.container',
+		 	freeze: true,
+		});
+		window.addEventListener('refreshclick', function(e){
+			mRefresh.refresh();
+		});
+	</script>
+</foot>
+</html>

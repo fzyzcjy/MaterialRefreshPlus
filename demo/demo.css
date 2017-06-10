@@ -1,0 +1,80 @@
+@media (max-width: 767px){
+    header {
+        height: 248px;
+    }
+}
+
+header {
+    background-color: #00897b !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    left: 0;
+    right: 0;
+    top: -192px;
+    z-index: 1000;
+    position: fixed;
+    background-color: #039BE5;
+    height: 256px;
+    padding: 115px 16px 0;
+    display: block;
+}
+
+@media (max-width: 767px){
+    .navbar-toggle, .navbar-btn, .bar-btn {
+        height: 56px;
+    }
+}
+
+.navbar-toggle, .navbar-btn, .bar-btn {
+    background: transparent !important;
+    background-size: 24px 24px;
+    border: 0;
+    display: block;
+    height: 64px;
+    overflow: hidden;
+    top: 0px;
+    width: 48px;
+    z-index: 1002;
+    position: fixed;
+    left: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (max-width: 767px){
+    .header-wrapper, .container {
+        padding-left: 0;
+    }
+    .header-wrapper, .header-title {
+        height: 56px;
+        line-height: 56px;
+    }
+}
+.header-wrapper {
+    height: 64px;
+    left: 72px;
+    right: 72px;
+    top: 0;
+    z-index: 1002;
+    position: fixed;
+    font-size: 18px;
+    line-height: 64px;
+    width: 100%;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.container {
+    padding-top: 80px;
+}
+
+.card-panel {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#muiRefresh {
+    z-index: 100;
+    top: 80px;
+}
